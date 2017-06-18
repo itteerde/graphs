@@ -1,5 +1,5 @@
 package de.itter.graphs.graphml;
 
-public interface Reader {
+public interface Reader extends de.itter.graphs.io.Reader{
 
 }

@@ -3,6 +3,7 @@ package de.itter.graphs.algorithms;
 import java.util.Collection;
 
 import de.itter.graphs.api.Edge;
+import de.itter.graphs.api.Graph;
 import de.itter.graphs.api.Node;
 
 public class Algorithms {
@@ -31,5 +32,9 @@ public class Algorithms {
 	
 	public static Collection<Node> getProdgeny(Node n){
 		return null;
+	}
+	
+	public boolean isCycleFree(Graph g){
+		return false;
 	}
 }

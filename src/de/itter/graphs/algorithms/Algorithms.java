@@ -37,4 +37,8 @@ public class Algorithms {
 	public boolean isCycleFree(Graph g){
 		return false;
 	}
+	
+	public boolean isForest(Graph g){
+		return isCycleFree(g);
+	}
 }

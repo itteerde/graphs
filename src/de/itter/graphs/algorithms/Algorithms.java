@@ -34,11 +34,23 @@ public class Algorithms {
 		return null;
 	}
 	
-	public boolean isCycleFree(Graph g){
+	public static boolean isCycleFree(Graph g){
 		return false;
 	}
 	
-	public boolean isForest(Graph g){
+	public static boolean isForest(Graph g){
 		return isCycleFree(g);
+	}
+	
+	public static Graph minimumSpanningTree(Graph g){
+		return null;
+	}
+	
+	public static Graph shortestPath(Graph g, Node start, Node end){
+		return null;
+	}
+	
+	public static Graph getNeighborhood(Node n){
+		return null;
 	}
 }

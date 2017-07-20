@@ -1,7 +1,30 @@
 package de.itter.graphs;
 
-import de.itter.graphs.api.Graph;
+import java.io.Serializable;
+import java.util.Collection;
+import java.util.LinkedList;
 
-public class SimpeGraph implements Graph {
+import de.itter.graphs.api.Edge;
+import de.itter.graphs.api.Graph;
+import de.itter.graphs.api.Node;
+
+public class SimpeGraph implements Graph, Serializable {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -3868712789607881232L;
+	private LinkedList<Node> nodes;
+	private LinkedList<Edge> edges;
+
+	@Override
+	public Collection<Node> getNodes() {
+		return nodes;
+	}
+
+	@Override
+	public Collection<Edge> getEdges() {
+		return edges;
+	}
 
 }

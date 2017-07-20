@@ -8,7 +8,7 @@ import de.itter.graphs.graphml.GraphMLTest;
 
 @RunWith(Suite.class)
 @SuiteClasses({
-	GraphMLTest.class
+	GraphMLTest.class,
 })
 public class AllTests {
 

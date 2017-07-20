@@ -8,7 +8,7 @@ import de.itter.graphs.api.Edge;
 import de.itter.graphs.api.Graph;
 import de.itter.graphs.api.Node;
 
-public class SimpeGraph implements Graph, Serializable {
+public class SimpleGraph implements Graph, Serializable {
 	
 	/**
 	 * 

@@ -1,0 +1,1 @@
+"C:\Program Files\Java\jdk1.8.0_131\bin\xjc" -p de.itter.graphs.graphml graphml.xsd

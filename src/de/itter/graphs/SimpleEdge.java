@@ -5,7 +5,7 @@ import java.io.Serializable;
 import de.itter.graphs.api.Edge;
 import de.itter.graphs.api.Node;
 
-public class SimpleEdge implements Edge, Serializable {
+public class SimpleEdge extends AbstractEdge implements Edge, Serializable {
 	
 	/**
 	 * 

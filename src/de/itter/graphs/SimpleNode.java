@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 import de.itter.graphs.api.Node;
 
-public class SimpleNode implements Node, Serializable {
+public class SimpleNode extends AbstractNode implements Node, Serializable {
 	
 	/**
 	 * 

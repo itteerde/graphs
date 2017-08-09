@@ -1,5 +1,5 @@
 package de.itter.graphs.graphml;
 
-public class YEdReader implements GraphMLReader {
+public class YEdReader extends GraphMLReader {
 
 }

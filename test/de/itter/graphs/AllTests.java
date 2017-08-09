@@ -7,9 +7,7 @@ import org.junit.runners.Suite.SuiteClasses;
 import de.itter.graphs.graphml.GraphMLTest;
 
 @RunWith(Suite.class)
-@SuiteClasses({
-	GraphMLTest.class,
-})
+@SuiteClasses({ GraphMLTest.class, DegreeComparatorTest.class })
 public class AllTests {
 
 }

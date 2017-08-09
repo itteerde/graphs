@@ -1,5 +1,9 @@
 package de.itter.graphs.algorithms;
 
-public abstract class AbstractNodeComparator {
+import java.util.Comparator;
+
+import de.itter.graphs.api.Node;
+
+public abstract class AbstractNodeComparator implements Comparator<Node> {
 
 }

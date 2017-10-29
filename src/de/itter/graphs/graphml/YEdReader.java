@@ -20,6 +20,11 @@ public class YEdReader extends GraphMLReader {
 
 			GraphmlType graph = element.getValue();
 			List<KeyType> keys = graph.getKey();
+			Iterator<KeyType> keyIt = keys.iterator();
+			while (keyIt.hasNext()) {
+				KeyType kt = keyIt.next();
+				System.out.println(kt.getId() + ": " + kt.getAttrName() + "," + kt.getDesc());
+			}
 			List<Object> god = graph.getGraphOrData();
 			Iterator<Object> it = god.iterator();
 
@@ -31,7 +36,26 @@ public class YEdReader extends GraphMLReader {
 					Iterator<Object> donoeIt = dataOrNodeOrEdge.iterator();
 					while (donoeIt.hasNext()) {
 						Object o2 = donoeIt.next();
-						System.out.println(o2);
+
+						if (o2 instanceof DataType) {
+							DataType dtO2 = (DataType) o2;
+							System.out.println(dtO2.getContent());
+						}
+						if (o2 instanceof NodeType) {
+							NodeType ntO2 = (NodeType) o2;
+							List<Object> dataOrPort = ntO2.getDataOrPort();
+							Iterator<Object> dopIt = dataOrPort.iterator();
+							while (dopIt.hasNext()) {
+								DataType dt03 = (DataType) dopIt.next();
+								// System.out.println(dt03.getKey() + ": " +
+								// dt03.getContent());
+							}
+						}
+						if (o2 instanceof EdgeType) {
+							EdgeType etO2 = (EdgeType) o2;
+							// System.out.println(etO2.getId() + ": " +
+							// etO2.getSource() + "->" + etO2.getTarget());
+						}
 					}
 				}
 
